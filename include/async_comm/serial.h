@@ -64,7 +64,7 @@ public:
    *
    */
   Serial(std::string port, unsigned int baud_rate,
-         MessageHandler& message_handler = *(new DefaultMessageHandler));
+         MessageHandler& message_handler = default_message_handler_);
   ~Serial();
 
 
